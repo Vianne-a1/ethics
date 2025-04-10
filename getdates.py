@@ -1,16 +1,28 @@
-def read_dat_file(file_path):
+import re
+
+def find_dates(file_path):
+
+    date_pattern = r'\b(\d{4}-\d{2}-\d{2})\b|\b(\d{2}/\d{2}/\d{4})\b|\b(\d{2}-\d{2}-\d{4})\b'
+
     try:
-        with open(file_path, 'r') as file:  
-            data = file.readlines()  
-            return data
+        with open(file_path, 'r') as file: 
+            content = file.read()  
+
+            matches = re.findall(date_pattern, content)
+
+            dates = [match for group in matches for match in group if match]
+            
+            if dates:
+                print("Dates found in the file:")
+                for date in dates:
+                    print(date)
+            else:
+                print("No dates found in the file.")
     except FileNotFoundError:
         print("The specified file does not exist.")
     except Exception as e:
         print(f"An error occurred: {e}")
 
-# Example usage
-file_path = '/workspaces/ethics/datefile.dat'
-data = read_dat_file(file_path)
-if data:
-    for line in data:
-        print(line.strip())  
+
+file_path = 'datefile.dat'
+find_dates(file_path)
