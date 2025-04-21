@@ -70,7 +70,7 @@ Line 69: 1/21/87
 Line 70: 11/3/1985
 Line 71: 7/04/82
 Line 72: 4-13-89
-Line 73: 7/11/77, 9/36/308
+Line 73: 9/36/308, 7/11/77
 Line 74: 4/12/74
 Line 75: 09/19/81
 Line 76: 9/6/79
@@ -232,7 +232,7 @@ Line 231: May 1986
 Line 232: May 2016
 Line 233: July 1977
 Line 234: July, 1990
-Line 235: Jul 2003
+Line 235: 2003
 Line 236: Oct 2015
 Line 237: May 1995
 Line 238: February 1976
@@ -488,6 +488,7 @@ Line 487: 1973
 Line 488: 1992
 Line 489: 1977
 Line 490: 1985
+Line 491: 0 dates
 Line 492: 2009
 Line 493: 1986
 Line 494: 1978
